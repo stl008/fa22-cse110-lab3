@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon_io/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Meeting Minutes</h1>
+      <h2>Meeting Topic</h2>
+      <h3>10/9/2022</h3>
+      <nav>
+        <ul>
+          <li><a href="#AttendanceList">Attendance List</a></li>
+          <li><a href="#Agenda">Agenda</a></li>
+          <li><a href="#MeetingContents">Meeting Contents</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Meeting Minutes</h1>
+      <h2>Meeting Topic</h2>
+      <h3>10/9/2022</h3>
+
+      <img src="/tree_image.jpg" alt="Picture of a Tree">
+      <audio controls src="/VID_20221009_105603.mp4" autoplay>
+      </audio>
+      <video controls>
+        <source src="/VID_20221009_105603.mp4" type="video/mp4">
+      </video>      
+
+      <h4 id="AttendanceList">Attendance List</h4>
+      <section>
+        <ul>
+          <li>Guest a</li>
+          <li>Guest b</li>
+          <li>Guest c</li>
+        </ul>
+      </section>
+      <hr>
+      <h4 id="Agenda">Agenda</h4>
+      <section>
+        <ol>
+          <li>Topic A</li>
+          <li>Topic B</li>
+          <li>Topic C</li>
+        </ol>
+      </section>
+      <hr>
+      <h4 id="MeetingContents">Meeting Contents</h4>
+      <section>
+        <p>Unfinished business from last meeting</p>
+        <p><span>~Thing 1~</span><span>~Thing 2~</span></p>
+        <p><a href="https://www.youtube.com/watch?v=Gus4dnQuiGk">Link if video doesn't work</a></p>
+        <hr>
+        <p>New business that needs to be talked about</p>
+        <div>~Thing A~</div><div>~Thing B~</div>
+        <p><b>Bold Text</b>,<br><strong>Strong Text</strong>,<br><i>Italicized Text</i>,<br><em>Emphasized Text</em><p>
+        <hr>
+        <p>Miscellaneous comments/questions/concerns brought up</p>
+      </section>
+      
+      <textarea id="scenario" name="scenario" rows="10" cols="50">Tell us about yourself</textarea>
+  
+      <label for="favoriteFlavor">Choose a flavor:</label>
+      <input list="flavors" id="favoriteFlavor" name="favoriteFlavor">
+      <datalist id="flavors">
+        <option value="Vanilla">
+        <option value="Chocolate">
+        <option value="Strawberry">
+        <option value="Coffee">
+        <option value="Mint">
+      </datalist>
+  
+      <label for="preferredPet">Choose which pet you prefer:</label>
+      <select name="pets" id="preferredPet">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+
+      <button name="useless">Pressing me does nothing</button>
+
+      <form method="get">
+        <label for="yourName">Name</label>
+        <input type="text" name="yourName" id="yourName"/>
+      </form>
+
+      <form method="get">
+        <label for="today">Today's Date</label>
+        <input type="date" id="today" />
+      </form>
+
+      <form>
+        <fieldset>
+          <legend>Choose your starter pokemon</legend>
+          <input type="radio" id="bulbasaur" name="pokemon" value="B">
+          <label for="bulbasaur">Bulbasaur</label><br>
+          <input type="radio" id="charmander" name="pokemon" value="C">
+          <label for="charmander">Charmander</label><br>
+          <input type="radio" id="squirtle" name="pokemon" value="S">
+          <label for="squirtle">Squirtle</label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Checkboxes</legend>
+          <div>
+            <input type="checkbox" id="choice1" name="choice1" value="choice1" />
+            <label for="choice1">Choice 1</label>
+          </div>
+          <div>
+            <input type="checkbox" id="choice2" name="choice2" value="choice2" />
+            <label for="choice2">Choice 2</label>         
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <details>
+        <summary>Details</summary>
+        <p>This is the most recent Meeting Minutes, updated on 10/9/2022 for the assignment Lab2 for CSE 110.</p>
+      </details>
+    </footer>
+  </body>    
+</html>
