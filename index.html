@@ -6,13 +6,21 @@
     <meta charset="utf-8" />
     <link rel="icon" href="/favicon_io/favicon.ico" />
   </head>
+  <style>
+    html {font-size: 16 px;}
+    .cm p {font-size: 1cm;}
+    .mm p {font-size: 1mm;}
+    .a ul {font-size: 1.3em;}
+    .b ul {width: 1lh; height:1lh;}
+    ol {font-size:1.3rem} 
+  </style>
   <body>
     <header>
       <h1 style="background-color:#FF7F50;">Meeting Minutes</h1>
       <h2>Meeting Topic</h2>
       <h3>10/9/2022</h3>
       <nav>
-        <ul>
+        <ul class="b">
           <li><a href="#AttendanceList">Attendance List</a></li>
           <li><a href="#Agenda">Agenda</a></li>
           <li><a href="#MeetingContents">Meeting Contents</a></li>
@@ -33,7 +41,7 @@
 
       <h4 id="AttendanceList">Attendance List</h4>
       <section>
-        <ul>
+        <ul class="a">
           <li>Guest a</li>
           <li>Guest b</li>
           <li>Guest c</li>
@@ -51,8 +59,8 @@
       <hr>
       <h4 id="MeetingContents">Meeting Contents</h4>
       <section>
-        <p>Unfinished business from last meeting</p>
-        <p><span>~Thing 1~</span><span>~Thing 2~</span></p>
+        <p class="mm">Unfinished business from last meeting</p>
+        <p class="cm"><span>~Thing 1~</span><span>~Thing 2~</span></p>
         <p><a href="https://www.youtube.com/watch?v=Gus4dnQuiGk">Link if video doesn't work</a></p>
         <hr>
         <p>New business that needs to be talked about</p>
