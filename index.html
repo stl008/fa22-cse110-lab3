@@ -11,8 +11,8 @@
   </head>
   <style>
     html {font-size: 16 px; font-family: }
-    .cm {font-size: 1cm;}
-    .mm {font-size: 1mm;}
+    p.cm {font-size: 1cm;}
+    p.mm {font-size: 1mm;}
     .a li {font-size: 1.3em;}
     .b li {width: 1lh; height:1lh;}
     .c li {font-size:1.3rem}
@@ -111,6 +111,15 @@
     }
 
     body{font-family: "Roboto", sans-serif;}
+  
+    span * {background-color: gold;}
+    #bulbasaur, #charmander, #squirtle {color:indigo;}
+    h4 {color: olive;}
+    a[href^="#"] {background-color: lavender;}
+    li li {list-style-type: disk;}
+    grid ~ p {background-color: plum;}
+    li + li {color: navy;}
+    
   </style>
   <body>
     <header>
@@ -145,6 +154,10 @@
       <section>
         <ul class="a">
           <li>Guest a</li>
+            <ul>
+              <li>Friend a</li>
+              <li>Friend b</li>
+            </ul>
           <li>Guest b</li>
           <li>Guest c</li>
         </ul>
