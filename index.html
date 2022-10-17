@@ -50,7 +50,7 @@
       width: 300px;
       height: 300px;
     }
-    .box2 p{
+    .box2 {
       margin: 25px -5px 25px -10px;
 
       padding: 10px 10px 10px 10px;
@@ -64,7 +64,13 @@
     }
     
     .ex1{color:red; display:inline;}
-    .ex2{color:red; display:block;} 
+    .ex2{color:red; display:block;}
+
+    .static{position: static;}
+    .relative{position:relative; top:20px;}
+    .fixed{position:fixed; top:30px; left:10px;}
+    .absolute{position:absolute; top:100px; left:100px;}
+    .sticky{position: sticky;} 
   </style>
   <body>
     <header>
@@ -84,7 +90,11 @@
       <h2 style="color:#0000ff;">Meeting Topic</h2>
       <h3 style="color:hsl(240,100%,50%);">10/9/2022</h3>
 
-      <img src="/tree_image.jpg" alt="Picture of a Tree">
+      <img class="static" src="/tree_image.jpg" alt="Picture of a Tree">
+      <img class="relative" src="/tree_image.jpg" alt="Picture of a Tree">
+      <img class="fixed" src="/tree_image.jpg" alt="Picture of a Tree">
+      <img class="absolute" src="/tree_image.jpg" alt="Picture of a Tree">
+      <img class="sticky" src="/tree_image.jpg" alt="Picture of a Tree">
       <audio controls src="/VID_20221009_105603.mp4" autoplay>
       </audio>
       <video controls>
@@ -116,7 +126,7 @@
         <p><a href="https://www.youtube.com/watch?v=Gus4dnQuiGk">Link if video doesn't work</a></p>
         <hr>
         <p class="box1">New business that needs to be talked about</p>
-        <div>~Thing A~</div><div>~Thing B~</div><div>~<p class="ex2">Thing 3</p>~</div><div>~<p class="ex1">Thing 4</p>~</div>
+        <div>~Thing A~</div><div>~Thing B~</div><div>~<p class="ex2">Thing 3</p>~~<p class="ex1">Thing 4</p>~</div>
         <p><b>Bold Text</b>,<br><strong>Strong Text</strong>,<br><i>Italicized Text</i>,<br><em>Emphasized Text</em><p>
         <hr>
         <p class="box2">Miscellaneous comments/questions/concerns brought up</p>
